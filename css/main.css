@@ -1,0 +1,491 @@
+@font-face {
+    src: url("../fonts/tavolga_free.ttf");
+    font-family: "TavolgaFree";
+}
+
+@font-face {
+    src: url("../fonts/Gilroy-Bold.ttf");
+    font-family: "GilroyBold";
+}
+
+@font-face {
+    src: url("../fonts/Gilroy-ExtraBold.ttf");
+    font-family: "GilroyExtraBold";
+}
+
+@font-face {
+    src: url("../fonts/Gilroy-Medium.ttf");
+    font-family: "GilroyMedium";
+}
+
+@font-face {
+    src: url("../fonts/Gilroy-Regular.ttf");
+    font-family: "GilroyRegular";
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(235, 168, 177);
+    font-family: "TavolgaFree", sans-serif;
+}
+
+#header_container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 0;
+}
+
+.logo {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+#menu {
+    margin: 0 324px 0 232px;
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu a.menu_item {
+    font-size: 14px;
+    font-family: "GilroyMedium", sans-serif;
+    color: rgb(119, 11, 29);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+}
+
+#menu a.menu_item:hover {
+    border-bottom: 2px solid #821328;
+}
+
+#menu a.menu_item:active {
+    color: rgb(206, 66, 87);
+    border-bottom: 2px solid rgb(206, 66, 87);;
+}
+
+.telephone {
+    font-size: 16px;
+    font-family: "GilroyBold", sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.02em;
+}
+
+#main_container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 65px 0 50px 0;
+    justify-content: space-between;
+    position: relative;
+}
+
+#main_info {
+    max-width: 580px;
+}
+
+#main_info h1 {
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+    line-height: 1.091;
+    margin: 0;
+    font-weight: normal;
+}
+
+#main_text {
+    margin-top: 60px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.389;
+    max-width: 348px;
+}
+
+.btn {
+    background-image: -moz-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    font-size: 18px;
+    font-family: "GilroyBold", sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.btn:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(100,7,26) 0%, rgb(192,62,81) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(100,7,26) 0%, rgb(192,62,81) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(100,7,26) 0%, rgb(192,62,81) 100%);
+    cursor: pointer;
+}
+
+.btn:active {
+    background-image: -moz-linear-gradient(90deg, rgb(92, 6, 24) 0%, rgb(176, 57, 74) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(92, 6, 24) 0%, rgb(176, 57, 74) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(92, 6, 24) 0%, rgb(176, 57, 74) 100%);
+    cursor: pointer;
+}
+
+#main_action {
+    margin-top: 80px;
+}
+
+#main_action .btn {
+    display: inline-block;
+    width: 240px;
+}
+
+#main_image {
+    max-width: 550px;
+}
+
+#main_image img {
+    max-width: 100%;
+}
+
+#bakery {
+    background-color: rgb(255, 239, 239);
+    overflow: hidden;
+}
+
+#bakery_container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    padding: 120px 0 80px 0;
+    justify-content: space-between;
+}
+
+#bakery_info {
+    max-width: 475px;
+}
+
+#bakery_title {
+    font-size: 45px;
+    color: rgb(51, 25, 7);
+    line-height: 1.222;
+}
+
+#bakery_text {
+    margin-top: 60px;
+    font-size: 18px;
+    font-family: "GilroyRegular", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.556;
+    max-width: 397px;
+}
+
+#bakery_image {
+    width: 585px;
+    position: relative;
+}
+
+#bakery_image img {
+    position: absolute;
+    left: 20px;
+    bottom: -150px;
+}
+
+#advantages_container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.advantage {
+    width: 222px;
+}
+
+.advantage .advantage_image_container {
+    width: 70px;
+    height: 73px;
+    position: relative;
+    display: inline-block;
+}
+
+.advantage .advantage_image {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #821328;
+    border-radius: 50%;
+    position: relative;
+}
+
+.advantage .advantage_image:hover {
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.advantage .advantage_image span {
+    font-size: 60px;
+    font-family: "GilroyExtraBold", sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 26px; /* 11px и без line-height*/
+    left: 20px;
+    line-height: 46px;
+}
+
+.advantage .advantage_title {
+    font-size: 20px;
+    font-family: "GilroyExtraBold", sans-serif;
+    color: rgb(51, 25, 7);
+    margin-top: 10px;
+}
+
+.advantage .advantage_text {
+    margin-top: 16px;
+    font-size: 15px;
+    font-family: "GilroyMedium", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.333;
+    height: 100px;
+}
+
+#products_container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+#products_title {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#products_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 142px;
+}
+
+#products_items .product {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 263px;
+    padding: 27px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#products_items .product .product_image {
+    width: 216px;
+    position: absolute;
+    top: -108px;
+    left: calc(50% - 108px);
+}
+
+#products_items .product .product_image img {
+    max-width: 100%;
+}
+
+#products_items .product .product_title {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 82px;
+}
+
+#products_items .product .product_panel {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#products_items .product .product_panel .product_text {
+    font-size: 15px;
+    font-family: "GilroyRegular", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#products_items .product .product_panel .product_text .product_price {
+    margin-top: 14px;
+}
+
+#products_items .product .product_panel .product_button.btn {
+    padding: 16px;
+    border: 0;
+    outline: 0;
+    width: 130px;
+    font-size: 16px;
+}
+
+#order {
+    background-color: rgb(255, 239, 239);
+}
+
+#order_container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 55px 0 85px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#order_image {
+    max-width: 490px;
+    position: relative;
+}
+
+#order_image img {
+    max-width: 100%;
+}
+
+#order_description {
+    max-width: 406px;
+    margin-left: 115px;
+    position: relative;
+}
+
+#order_title {
+    font-size: 45px;
+    color: rgb(51, 25, 7);
+}
+
+#order_text {
+    font-size: 18px;
+    font-family: "GilroyRegular", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.556;
+    margin-top: 35px;
+}
+
+#order_form {
+    max-width: 296px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#order_form .order_form_title {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(18, 10, 6);
+    font-family: "GilroyBold", sans-serif;
+    letter-spacing: 0.02em;
+}
+
+#order_form input {
+    border-width: 1px;
+    border-color: rgb(130, 19, 40);
+    border-style: solid;
+    border-radius: 30px;
+    padding: 20px 23px;
+    font-size: 15px;
+    color: rgb(18, 10, 6);
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    margin-bottom: 15px;
+    font-family: "GilroyBold", sans-serif;
+    letter-spacing: 0.02em;
+}
+
+input::placeholder {
+    color: rgb(118, 12, 34);
+}
+
+#order_form img {
+    display: none;
+}
+
+#order_form button.btn {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+
+#order_description img {
+    position: absolute;
+    bottom: 85px;
+    right: 0;
+    width: 50px;
+}
+
+#big_strawberry {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    width: 82px;
+}
+
+#footer {
+    background-color: rgb(192, 112, 124);
+}
+
+#footer_container {
+    padding: 70px 0 60px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer_logo {
+    display: flex;
+    flex-direction: column;
+}
+
+#rights {
+    font-size: 12px;
+    font-family: "GilroyRegular", sans-serif;
+    color: rgb(227, 172, 180);
+    margin-top: 17px;
+    letter-spacing: 0.04em;
+}
+
+#instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+#instagram svg {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 13px;
+    fill: white;
+}
+
+#instagram div {
+    font-size: 16px;
+    font-family: "GilroyBold", sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.02em;
+}
+
+#burger {
+    display: none;
+}
+
+#menu svg {
+    display: none;
+}
