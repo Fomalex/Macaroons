@@ -1,0 +1,603 @@
+/* MIXINS */
+.tablet-paddings() {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mobile-paddings() {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* 1024 - 1179px */
+@media screen and (max-width: 1179px) {
+    #header {
+        #header_container {
+            .tablet-paddings();
+            #menu {
+                margin: 0;
+            }
+        }
+    }
+
+    #main {
+        #main_container {
+            padding: 95px 20px 80px 20px;
+            #main_image {
+                max-width: 480px;
+            }
+        }
+    }
+
+    #bakery {
+        #bakery_container {
+            .tablet-paddings();
+        }
+        #advantages_container {
+            .tablet-paddings();
+        }
+    }
+
+    #products {
+        #products_container {
+            .tablet-paddings();
+            padding-bottom: 0;
+            #products_items {
+                justify-content: center;
+                margin: 70px auto 50px auto;
+                max-width: 728px;
+                .product {
+                    margin: 70px 15px;
+                }
+            }
+        }
+    }
+
+    #order {
+        #order_container {
+            .tablet-paddings();
+        }
+    }
+
+    #footer {
+        #footer_container {
+            .tablet-paddings();
+        }
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    #bakery {
+        #bakery_container {
+            #bakery_image {
+                width: 500px;
+                img {
+                    right: 0;
+                    bottom: -125px;
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    #order {
+        #order_container {
+            #order_description {
+                margin-left: 60px;
+            }
+        }
+    }
+
+    #main {
+        #main_container {
+            padding-bottom: 120px;
+            padding-top: 135px;
+            #main_image {
+                max-width: 404px;
+            }
+        }
+    }
+
+}
+
+//
+//@media screen and (max-width: 1026px) {
+//    #main_image {
+//        max-width: 404px;
+//    }
+//}
+
+
+/* 768 - 1023px */
+@media screen and (max-width: 1023px) {
+    #header {
+        #header_container {
+            max-width: 728px;
+            #menu {
+                margin-left: 65px;
+            }
+            .telephone {
+                color: transparent;
+            }
+        }
+    }
+
+    #main {
+        #main_container {
+            padding-bottom: 420px;
+            max-width: 728px;
+            #main_info {
+                #main_text {
+                    margin-top: 70px;
+                }
+                #main_action {
+                    margin-top: 45px;
+                }
+            }
+            #main_image {
+                max-width: 550px;
+                position: absolute;
+                right: 20px;
+                bottom: 0;
+            }
+        }
+    }
+
+    #bakery {
+        #bakery_container {
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 0;
+            #bakery_info {
+                max-width: 668px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                #bakery_title {
+                    max-width: 475px;
+                }
+                #bakery_text {
+                    max-width: 668px;
+                }
+            }
+            #bakery_image {
+                width: 340px;
+                height: 300px;
+                img {
+                    left: 0;
+                    top: -40px;
+                    width: 340px;
+                }
+            }
+        }
+        #advantages_container {
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 40px;
+            max-width: 728px;
+            .advantage {
+                margin: 0 30px 80px 30px;
+                .advantage_text {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    #order {
+        overflow: hidden;
+        #order_container {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            max-width: 728px;
+            #order_image {
+                order: 2;
+                width: 425px;
+                position: absolute;
+                bottom: -55px;
+                right: -18px;
+                #order_picture {
+                    width: 425px;
+                }
+                #big_strawberry {
+                    width: 72px;
+                }
+            }
+            #order_description {
+                margin-left: 0;
+                position: static;
+                img {
+                    top: 250px;
+                    right: 116px;
+                }
+            }
+        }
+    }
+}
+
+
+/* 425 - 767px */
+@media screen and (max-width: 767px) {
+    #header {
+        #header_container {
+            flex-direction: column;
+            #menu {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            .telephone {
+                display: none;
+            }
+        }
+    }
+
+    #main {
+        #main_container {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            #main_info {
+                h1 {
+                    font-size: 45px;
+                }
+                #main_text {
+                    display: inline-block;
+                    margin-top: 40px;
+                }
+            }
+            #main_image {
+                position: static;
+                max-width: 400px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    #bakery {
+        #bakery_container {
+            padding-top: 100px;
+            #bakery_info {
+                #bakery_title {
+                    font-size: 38px;
+                }
+                #bakery_text {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+            }
+            #bakery_image {
+                height: 264px;
+            }
+        }
+        #advantages_container {
+            padding-bottom: 60px;
+            .advantage {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    #products {
+        #products_container {
+            padding-top: 100px;
+            #products_title {
+                font-size: 38px;
+            }
+            #products_items {
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    #order {
+        #order_container {
+            padding-top: 100px;
+            padding-bottom: 80px;
+            justify-content: center;
+            #order_image {
+                display: none;
+            }
+            #order_description {
+                img {
+                    display: none;
+                }
+                #order_title {
+                    font-size: 38px;
+                }
+                #order_form {
+                    max-width: 100%;
+                    position: relative;
+                    img {
+                        display: block;
+                        width: 72px;
+                        position: absolute;
+                        top: -33px;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 604px) {
+    #bakery {
+        #advantages_container {
+            padding-bottom: 25px;
+            .advantage {
+                width: 185px;
+                .advantage_text {
+                    height: 154px;
+                }
+            }
+        }
+    }
+
+    #footer {
+        #footer_container {
+            padding: 50px 15px 100px 15px;
+            flex-direction: column;
+            position: relative;
+            #footer_logo {
+                align-items: center;
+                margin-bottom: 95px;
+                #rights {
+                    position: absolute;
+                    display: inline-block;
+                    width: 170px;
+                    bottom: 50px;
+                    left: calc(50% - 85px);
+                    margin: 0;
+                }
+            }
+            .telephone {
+                position: absolute;
+                top: 100px;
+                left: calc(50% - 76px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 545px) {
+    #bakery {
+        #advantages_container {
+            justify-content: center;
+            padding-bottom: 16px;
+            .advantage {
+                margin: 0 10px 40px 10px;
+                width: 165px;
+                .advantage_title {
+                    font-size: 18px;
+                }
+                .advantage_text {
+                    max-width: 165px;
+                    font-size: 13px;
+                    line-height: 1.385;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #main {
+        #main_container {
+            #main_info {
+                h1 {
+                    font-size: 36px;
+                }
+                #main_text {
+                    font-size: 16px;
+                    line-height: 1.438;
+                }
+            }
+            #main_image {
+                max-width: 350px;
+            }
+        }
+    }
+
+    #bakery {
+        #bakery_container {
+            #bakery_info {
+                #bakery_title {
+                    font-size: 34px;
+                    line-height: 1.167;
+                }
+                #bakery_text {
+                    font-size: 16px;
+                    line-height: 1.437;
+                }
+            }
+        }
+    }
+
+    #products {
+        #products_container {
+            #products_title {
+                font-size: 34px;
+            }
+        }
+    }
+
+    #order {
+        #order_container {
+            #order_description {
+                #order_title {
+                    font-size: 34px;
+                }
+                #order_text {
+                    font-size: 16px;
+                    line-height: 1.437;
+                }
+            }
+        }
+    }
+}
+
+/* 375 - 424px */
+@media screen and (max-width: 424px) {
+    #header {
+        #header_container {
+            .mobile-paddings();
+            justify-content: space-between;
+            flex-direction: row;
+            #burger {
+                display: inline-block;
+                order: 2;
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    fill: #821328;
+                }
+            }
+            .logo {
+                margin-left: 5px;
+            }
+            #menu {
+                display: none;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0;
+                padding-top: 30px;
+                background: #000000d9;
+                top: 0;
+                left: 0;
+                a.menu_item {
+                    color: white;
+                    margin: 15px 0;
+                }
+                svg {
+                    width: 24px;
+                    display: block;
+                    fill: white;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+            }
+            #menu.open {
+                display: flex;
+                z-index: 90;
+            }
+        }
+    }
+
+    #main {
+        #main_container {
+            .mobile-paddings();
+            #main_info {
+                h1 {
+                    font-size: 32px;
+                }
+            }
+            #main_image {
+                max-width: 265px;
+            }
+        }
+    }
+
+    #bakery {
+        #bakery_container {
+            .mobile-paddings();
+            #bakery_info {
+                #bakery_title {
+                    font-size: 30px;
+                }
+                #bakery_text {
+                    line-height: 1.437;
+                }
+            }
+        }
+        #advantages_container {
+            .mobile-paddings();
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: space-around;
+            .advantage {
+                margin: 0 0 40px 0;
+            }
+        }
+    }
+
+    #products {
+        #products_container {
+            .mobile-paddings();
+            #products_title {
+                font-size: 30px;
+            }
+        }
+    }
+
+    #order {
+        #order_container {
+            .mobile-paddings();
+            #order_description {
+                #order_title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+/* 320 - 374px */
+@media screen and (max-width: 374px) {
+    #main {
+        #main_container {
+            #main_info {
+                h1 {
+                    font-size: 27px;
+                }
+                #main_text {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    #bakery {
+        #bakery_container {
+            #bakery_info {
+                #bakery_title {
+                    font-size: 26px;
+                }
+                #bakery_text {
+                    font-size: 15px;
+                }
+            }
+            #bakery_image {
+                width: 300px;
+                height: 240px;
+                img {
+                    width: 300px;
+                }
+            }
+        }
+        #advantages_container {
+            .advantage {
+                width: 145px;
+                .advantage_title {
+                    font-size: 15px;
+                }
+                .advantage_text {
+                    font-size: 12px;
+                    max-width: 130px;
+                }
+            }
+        }
+    }
+}
